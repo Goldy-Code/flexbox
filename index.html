@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>flex</title>
+  </head>
+  <body>
+    <h1>СВОЙСТВА FLEX-КОНТЕЙНЕРА</h1>
+    <div class="line">
+      <div class="block">
+        <div class="num">1</div>
+        <div class="txt">
+          <div class="text">display: flex;</div>
+          <div class="text2">display: -webkit-flex;</div>
+          <div class="description">Назначение: запуск механизма Flexbox</div>
+          <div class="description">Возможные значения: flex / inline-flex</div>
+        </div>
+      </div>
+
+      <div class="block2">
+        <div>
+          <div class="card1 boxx">
+            <div class="cards"></div>
+            <div class="cards"></div>
+            <div class="cards"></div>
+          </div>
+          <div class="card2 boxx">
+            <div class="cards"></div>
+            <div class="cards"></div>
+            <div class="cards"></div>
+          </div>
+        </div>
+        <div>
+          <div class="text01">flex</div>
+          <div class="text02">inline-flex</div>
+        </div>
+      </div>
+    </div>
+
+    <!--  -->
+    <div class="line">
+      <div class="block">
+        <div class="num">2</div>
+        <div class="txt">
+          <div class="text">flex-direction: row;</div>
+          <div class="text2">-webkit-flex-direction: row;</div>
+          <div class="description">
+            Назначение: направоление укладки элементов по осям
+          </div>
+          <div class="description">
+            Возможные значения: row / row-reverse / column / column-reverse
+          </div>
+        </div>
+      </div>
+
+      <div class="block2">
+        <div>
+          <div class="card3 boxx">
+            <div class="cards"></div>
+            <div class="cards"></div>
+            <div class="cards"></div>
+          </div>
+          <div class="card4 boxx">
+            <div class="cards"></div>
+            <div class="cards"></div>
+            <div class="cards"></div>
+          </div>
+        </div>
+        <div>
+          <div class="text01">row</div>
+          <div class="text02">row-reverse</div>
+        </div>
+      </div>
+
+      <div class="block3">
+        <div>
+          <div class="card5 boxx">
+            <div class="cards column"></div>
+            <div class="cards column"></div>
+            <div class="cards column"></div>
+          </div>
+          <div class="card6 boxx">
+            <div class="cards column"></div>
+            <div class="cards column"></div>
+            <div class="cards column"></div>
+          </div>
+        </div>
+        <div>
+          <div class="text01">column</div>
+          <div class="text02">column-reverse</div>
+        </div>
+      </div>
+    </div>
+
+    <!--  -->
+
+    <div class="line">
+      <div class="block">
+        <div class="num">3</div>
+        <div class="txt">
+          <div class="text">flex-wrap: nowrap;</div>
+          <div class="text2">-webkit-flex-wrap: nowrap;</div>
+          <div class="description">
+            Назначение: расположение элементов в одну или несколько строк
+          </div>
+          <div class="description">
+            Возможные значения: nowrap / wrap/ wrap-reverse
+          </div>
+        </div>
+      </div>
+
+      <div class="block2">
+        <div>
+          <div class="card7 boxx">
+            <div class="cards"></div>
+            <div class="cards"></div>
+            <div class="cards"></div>
+            <div class="cards"></div>
+            <div class="cards"></div>
+            <div class="cards"></div>
+          </div>
+          <div class="card8 boxx">
+            <div class="cards wrap"></div>
+            <div class="cards wrap"></div>
+            <div class="cards wrap"></div>
+            <div class="cards wrap"></div>
+            <div class="cards wrap"></div>
+            <div class="cards wrap"></div>
+            <div class="cards wrap"></div>
+            <div class="cards wrap"></div>
+            <div class="cards wrap"></div>
+          </div>
+        </div>
+        <div>
+          <div class="text01 down">nowrap</div>
+          <div class="text02">wrap</div>
+        </div>
+      </div>
+      <div class="block3">
+        <div>
+          <div class="card9 boxx nope"></div>
+          <div class="card10 boxx">
+            <div class="cards wrap-r"></div>
+            <div class="cards wrap-r"></div>
+            <div class="cards wrap-r"></div>
+            <div class="cards wrap-r"></div>
+            <div class="cards wrap-r"></div>
+            <div class="cards wrap-r"></div>
+            <div class="cards wrap-r"></div>
+            <div class="cards wrap-r"></div>
+            <div class="cards wrap-r"></div>
+          </div>
+        </div>
+        <div>
+          <div class="text01 nope down">s</div>
+          <div class="text02">wrap-reverse</div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
+    <div class="line">
+      <div class="block">
+        <div class="num">4</div>
+        <div class="txt">
+          <div class="text">flex-flow: row nowrap;</div>
+          <div class="text2">-webkit-flex-flow: row nowrap;</div>
+          <div class="description">
+            Назначение: сокращённая запись для свойств flex-direction и
+            flex-wrap
+          </div>
+          <div class="description">Возможные значения:</div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
+    <div class="line">
+      <div class="block">
+        <div class="num">5</div>
+        <div class="txt">
+          <div class="text">justify-content: flex-start;</div>
+          <div class="text2">-wepkit-justify-content: flex-start;</div>
+          <div class="description">
+            Назначение: выравнивание flex-элементов по главной оси текущей
+            строки
+          </div>
+          <div class="description">
+            Возможные значения: flex-start / flex-end / center / space-between/
+            space-around
+          </div>
+        </div>
+      </div>
+
+      <div class="block2">
+        <div>
+          <div class="card11 boxx">
+            <div class="cards"></div>
+            <div class="cards"></div>
+            <div class="cards"></div>
+          </div>
+          <div class="card12 boxx">
+            <div class="cards"></div>
+            <div class="cards"></div>
+            <div class="cards"></div>
+          </div>
+        </div>
+        <div>
+          <div class="text01">flex-start</div>
+          <div class="text02">flex-end</div>
+        </div>
+      </div>
+
+      <div class="block3">
+        <div>
+          <div class="card13 boxx">
+            <div class="cards"></div>
+            <div class="cards"></div>
+            <div class="cards"></div>
+          </div>
+          <div class="card14 boxx">
+            <div class="cards nope2"></div>
+            <div class="cards nope2"></div>
+            <div class="cards nope2"></div>
+            <div class="cards nope2"></div>
+            <div class="cards nope2"></div>
+          </div>
+        </div>
+        <div>
+          <div class="text01">center</div>
+          <div class="text02">space-between</div>
+        </div>
+      </div>
+
+      <div class="block4">
+        <div>
+          <div class="card15 boxx">
+            <div class="cards nope2"></div>
+            <div class="cards nope2"></div>
+            <div class="cards nope2"></div>
+            <div class="cards nope2"></div>
+            <div class="cards nope2"></div>
+          </div>
+        </div>
+        <div>
+          <div class="text01">space-around</div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
+    <div class="line">
+      <div class="block">
+        <div class="num">6</div>
+        <div class="txt">
+          <div class="text">aling-items: stretch;</div>
+          <div class="text2">-webkit-aling-items: stretch;</div>
+          <div class="description">
+            Назначение: выравнивание flex-элементов вдоль попечнной оси
+          </div>
+          <div class="description">
+            Возможные значения: stretch / flex-start / flex-end / center /
+            baseline
+          </div>
+        </div>
+      </div>
+
+      <div class="block2">
+        <div>
+          <div class="card16 boxx">
+            <div class="cards"></div>
+            <div class="cards"></div>
+            <div class="cards"></div>
+          </div>
+          <div class="card17 boxx">
+            <div class="cards cards2"></div>
+            <div class="cards cards2"></div>
+            <div class="cards cards2"></div>
+          </div>
+        </div>
+        <div>
+          <div class="text01">stretch</div>
+          <div class="text02">flex-start</div>
+        </div>
+      </div>
+
+      <div class="block3">
+        <div>
+          <div class="card18 boxx">
+            <div class="cards cards2"></div>
+            <div class="cards cards2"></div>
+            <div class="cards cards2"></div>
+          </div>
+          <div class="card19 boxx">
+            <div class="cards cards2"></div>
+            <div class="cards cards2"></div>
+            <div class="cards cards2"></div>
+          </div>
+        </div>
+        <div>
+          <div class="text01">flex-end</div>
+          <div class="text02">center</div>
+        </div>
+      </div>
+
+      <div class="block4">
+        <div>
+          <div class="card20 boxx">
+            <div class="cards a1"></div>
+            <div class="cards a2"></div>
+            <div class="cards a3"></div>
+            <div class="cards a4"></div>
+          </div>
+        </div>
+        <div>
+          <div class="text01">baseline</div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
+    <div class="line">
+      <div class="block">
+        <div class="num">7</div>
+        <div class="txt">
+          <div class="text">aling-items: stretch;</div>
+          <div class="text2">-webkit-aling-items: stretch;</div>
+          <div class="description">
+            Назначение: выравнивание строк flex-элементов вдоль попечнной оси
+          </div>
+          <div class="description">
+            Возможные значения: strech / flex-start / flex-end /center /
+            space-between / space-around
+          </div>
+        </div>
+      </div>
+
+      <div class="block2">
+        <div>
+          <div class="card21 boxx">
+            <div class="cards cards3"></div>
+            <div class="cards cards3"></div>
+            <div class="cards cards3"></div>
+            <div class="cards cards3"></div>
+            <div class="cards cards3"></div>
+            <div class="cards cards3"></div>
+            <div class="cards cards3"></div>
+            <div class="cards cards3"></div>
+            <div class="cards cards3"></div>
+          </div>
+          <div class="card22 boxx">
+            <div class="cards cards3 b1"></div>
+            <div class="cards cards3 b1"></div>
+            <div class="cards cards3 b1"></div>
+            <div class="cards cards3 b1"></div>
+            <div class="cards cards3 b1"></div>
+            <div class="cards cards3 b1"></div>
+            <div class="cards cards3 b1"></div>
+            <div class="cards cards3 b1"></div>
+            <div class="cards cards3 b1"></div>
+            <div class="cards cards3 b1"></div>
+          </div>
+        </div>
+        <div>
+          <div class="text01">stretch</div>
+          <div class="text02">flex-start</div>
+        </div>
+      </div>
+      <div class="block3">
+        <div>
+          <div class="card23 boxx">
+            <div class="cards cards3 b2"></div>
+            <div class="cards cards3 b2"></div>
+            <div class="cards cards3 b2"></div>
+            <div class="cards cards3 b2"></div>
+            <div class="cards cards3 b2"></div>
+            <div class="cards cards3 b2"></div>
+            <div class="cards cards3 b2"></div>
+            <div class="cards cards3 b2"></div>
+            <div class="cards cards3 b2"></div>
+            <div class="cards cards3 b2"></div>
+          </div>
+          <div class="card24 boxx">
+            <div class="cards cards3 b1"></div>
+            <div class="cards cards3 b1"></div>
+            <div class="cards cards3 b1"></div>
+            <div class="cards cards3 b1"></div>
+            <div class="cards cards3 b1"></div>
+            <div class="cards cards3 b1"></div>
+            <div class="cards cards3 b1"></div>
+            <div class="cards cards3 b1"></div>
+            <div class="cards cards3 b1"></div>
+            <div class="cards cards3 b1"></div>
+          </div>
+        </div>
+        <div>
+          <div class="text01">flex-end</div>
+          <div class="text02">center</div>
+        </div>
+      </div>
+
+      <div class="block4">
+        <div>
+          <div class="card25 boxx">
+            <div class="cards cards3"></div>
+            <div class="cards cards3"></div>
+            <div class="cards cards3"></div>
+            <div class="cards cards3"></div>
+            <div class="cards cards3"></div>
+            <div class="cards cards3"></div>
+            <div class="cards cards3"></div>
+            <div class="cards cards3"></div>
+            <div class="cards cards3"></div>
+            <div class="cards cards3"></div>
+            <div class="cards cards3"></div>
+            <div class="cards cards3"></div>
+            <div class="cards cards3"></div>
+            <div class="cards cards3"></div>
+            <div class="cards cards3"></div>
+            <div class="cards cards3"></div>
+          </div>
+          <div class="card26 boxx">
+            <div class="cards cards3"></div>
+            <div class="cards cards3"></div>
+            <div class="cards cards3"></div>
+            <div class="cards cards3"></div>
+            <div class="cards cards3"></div>
+            <div class="cards cards3"></div>
+            <div class="cards cards3"></div>
+            <div class="cards cards3"></div>
+            <div class="cards cards3"></div>
+            <div class="cards cards3"></div>
+            <div class="cards cards3"></div>
+            <div class="cards cards3"></div>
+            <div class="cards cards3"></div>
+            <div class="cards cards3"></div>
+            <div class="cards cards3"></div>
+            <div class="cards cards3"></div>
+          </div>
+        </div>
+        <div>
+          <div class="text01">space-between</div>
+          <div class="text02">space-around</div>
+        </div>
+      </div>
+    </div>
+
+    <h1 id="top">СВОЙСТВА FLEX-КОНТЕЙНЕРА</h1>
+    <div class="line">
+      <div class="block">
+        <div class="num">1</div>
+        <div class="txt">
+          <div class="text">order: 0;</div>
+          <div class="text2">-webkit-order: 0;</div>
+          <div class="description">
+            Назначение: оприделение порядка расстановки flex-элементов
+          </div>
+          <div class="description">Возможные значения: (целое число)</div>
+        </div>
+      </div>
+
+      <div class="block4">
+        <div class="card-txt">
+          <div>
+            <div class="text01 text03">order: 0 order: 1</div>
+          </div>
+          <div class="card27 boxx">
+            <div class="cards">3</div>
+            <div class="cards">1</div>
+            <div class="cards">4</div>
+            <div class="cards">2</div>
+            <div class="cards">5</div>
+          </div>
+          <div>
+            <div class="text01 text03">order: -1 order: 0 order: 2</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="line">
+      <div class="block">
+        <div class="num">2</div>
+        <div class="txt">
+          <div class="text">flex-grow: 0;</div>
+          <div class="text2">-webkit-flex-grow: 0;</div>
+          <div class="description">
+            Назначение: указывает фактор растягивания flex-элемента
+          </div>
+          <div class="description">
+            Возможные значения: (целое неотрицательное число)
+          </div>
+        </div>
+      </div>
+
+      <div class="block4">
+        <div class="card-txt">
+          <div class="card28 boxx">
+            <div class="cards">1</div>
+            <div class="cards">2</div>
+            <div class="cards">3</div>
+            <div class="cards">4</div>
+            <div class="cards">5</div>
+          </div>
+          <div>
+            <div class="text01 text03">flex-grow: 1</div>
+          </div>
+        </div>
+      </div>
+      <div class="block3">
+        <div class="card-txt">
+          <div class="card29 boxx">
+            <div class="cards">1</div>
+            <div class="cards">2</div>
+            <div class="cards g3">3</div>
+            <div class="cards">4</div>
+            <div class="cards">5</div>
+          </div>
+          <div>
+            <div class="text01 text03">flex-grow: 3</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="line">
+      <div class="block">
+        <div class="num">3</div>
+        <div class="txt">
+          <div class="text">flex-shrink: 1;</div>
+          <div class="text2">-webkit-flex-shrink: 1;</div>
+          <div class="description">
+            Назначение: указывает фактор сужения flex-элемента
+          </div>
+          <div class="description">Возможные значения: 0</div>
+        </div>
+      </div>
+
+      <div class="block4">
+        <div class="card-txt">
+          <div class="card30 boxx">
+            <div class="cards">1</div>
+            <div class="cards">2</div>
+            <div class="cards">3</div>
+            <div class="cards">4</div>
+            <div class="cards">5</div>
+          </div>
+          <div>
+            <div class="text01 text03">flex-shrink: 1</div>
+          </div>
+        </div>
+      </div>
+      <div class="block3">
+        <div class="card-txt">
+          <div class="card31 boxx">
+            <div class="cards ">1</div>
+            <div class="cards g3">2</div>
+            <div class="cards ">3</div>
+            <div class="cards ">4</div>
+            <div class="cards ">5</div>
+          </div>
+          <div>
+            <div class="text01 text03">flex-shrink: 0</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="line">
+      <div class="block">
+        <div class="num">4</div>
+        <div class="txt">
+          <div class="text">flex-basis: auto;</div>
+          <div class="text2">-webkit-flex-basis: auto;</div>
+          <div class="description">
+            Назначение: указывает исходный главный размер flex-элемента
+          </div>
+          <div class="description">
+            Возможные значения: длина элемента в пикселях (к примеру, 240PX)
+          </div>
+        </div>
+      </div>
+
+      <div class="block4">
+        <div class="card-txt">
+          <div class="card32 boxx">
+            <div class="cards">1</div>
+            <div class="cards">2</div>
+            <div class="cards">3</div>
+            <div class="cards">4</div>
+            <div class="cards">5</div>
+          </div>
+          <div>
+            <div class="text01 text03">flex-base: auto</div>
+          </div>
+        </div>
+      </div>
+      <div class="block3">
+        <div class="card-txt">
+          <div class="card33 boxx">
+            <div class="cards">1</div>
+            <div class="cards base2">2</div>
+            <div class="cards">3</div>
+            <div class="cards">4</div>
+            <div class="cards">5</div>
+          </div>
+          <div>
+            <div class="text01 text03">flex-base: 240PX</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="line">
+      <div class="block">
+        <div class="num">5</div>
+        <div class="txt">
+          <div class="text">flex: 0 1 auto;</div>
+          <div class="text2">-webkit-flex: 0 1 auto;</div>
+          <div class="description">
+            Назначение: сокращённая запись для свойств flex-grow, flex-shrink и
+            flex-basis
+          </div>
+          <div class="description">Возможные значения: см. свойства 2, 3, и 4</div>
+        </div>
+      </div>
+    </div>
+    <div class="line">
+      <div class="block">
+        <div class="num">6</div>
+        <div class="txt">
+          <div class="text">aling-self: auto;</div>
+          <div class="text2">-webkit-aling-self: auto;</div>
+          <div class="description">Назначение: переопределяет выравнивание элемента по умолчанию</div>
+          <div class="description">
+            Возможные значения: auto / flex-start / flex-end / center / baseline
+            / stretch
+          </div>
+        </div>
+      </div>
+
+      <div class="block2">
+        <div class="card-txt">
+          <div>
+            <div class="text01 text03">aling-self: flex-start</div>
+          </div>
+          <div class="card34 boxx">
+            <div class="cards"></div>
+            <div class="cards"></div>
+            <div class="cards as3"></div>
+            <div class="cards as4"></div>
+            <div class="cards"></div>
+          </div>
+          <div>
+            <div class="text01 text03">aling-self: flex-end</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
